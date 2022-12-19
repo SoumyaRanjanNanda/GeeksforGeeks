@@ -1,0 +1,9 @@
+The reason for using pointers in a C program is
+
+A. Pointers allow different functions to share and modify their local variables.
+
+B. To pass large structures so that complete copy of the structure can be avoided.
+
+C. Pointers enable complex “linked" data structures like linked lists and binary trees.
+
+D. All of the above
