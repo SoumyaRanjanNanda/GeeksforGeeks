@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int arr[] = {10, 20, 30, 40, 50, 60};
+    int *ptr1 = arr;
+    int *ptr2 = arr + 5;
+    printf("Number of elements between two pointer are: %d.", 
+                                (ptr2 - ptr1));
+    printf("\nNumber of bytes between two pointers are: %d",  
+                              (char*)ptr2 - (char*) ptr1);
+    return 0;
+}
+
+output:-
+
+Number of elements between two pointer are: 5. 
+Number of bytes between two pointers are: 20
+
+Explanation: 
+
+Array name gives the address of first element in array. So when we do 
+'*ptr1 = arr;', ptr1 starts holding the address of element 10.'arr + 5' gives 
+the address of 6th element as arithmetic is done using pointers. So 'ptr2-
+ptr1' gives 5. When we do '(char *)ptr2', ptr2 is type-casted to char pointer
+and size of character is one byte, pointer arithmetic happens considering
+character pointers. So we get 5*sizeof(int)/sizeof(char) as a difference of two pointers.
