@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{            //  0  1  2  3  4
+    int arr[] = {1, 2, 3, 4, 5};
+    int *p = arr;
+    ++*p;       //++*p  means *p++ is known as *p+1 ~ 1+1
+    p += 2;     // p=p+2;  now p is at indexing number 0 then p address is increasing by 2 means 2*4 bytes now p is 3 (0 1 2 3 ) 
+    printf("%d", *p); // 3  
+    return 0;
+}
+
+output:-
+ 3
