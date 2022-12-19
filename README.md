@@ -1,0 +1,2 @@
+# GeeksforGeeks
+pointer questions solving
