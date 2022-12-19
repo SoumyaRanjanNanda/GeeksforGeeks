@@ -1,0 +1,33 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int *ptr;
+    int x;
+ 
+    ptr = &x;
+    *ptr = 0;
+ 
+    printf(" x = %dn", x);
+    printf(" *ptr = %dn", *ptr);
+ 
+    *ptr += 5;
+    printf(" x  = %dn", x);
+    printf(" *ptr = %dn", *ptr);
+ 
+    (*ptr)++;
+    printf(" x = %dn", x);
+    printf(" *ptr = %dn", *ptr);
+ 
+    return 0;
+}
+
+output:-
+
+x = 0
+*ptr = 0
+x = 5
+*ptr = 5
+x = 6
+*ptr = 6
+
