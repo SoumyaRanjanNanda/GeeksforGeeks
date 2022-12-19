@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+int main()
+{    // index number 0      1     2    3     4
+    float arr[5] = {12.5, 10.0, 13.5, 90.5, 0.5};
+    float *ptr1 = &arr[0];     
+    float *ptr2 = ptr1 + 3;   // ptr1 storing address of 0 number index means 12.5 (ptr1(0)+3= 1 2 3(90.5)) 
+ 
+    printf("%f ", *ptr2);
+    printf("%d", ptr2 - ptr1);   // ptr2 is storing the address of 3 number address(90.5)-ptr1(12.5)  float taking 4 bytes {(address of ptr2-address of ptr1)/4 bytes} 
+ 
+   return 0;
+}
+
+output:-
+
+90.500000 3
